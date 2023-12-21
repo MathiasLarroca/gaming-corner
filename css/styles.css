@@ -284,3 +284,18 @@ h3 {
     border-color: crimson;
     border-style: inset;
 }
+
+/* Media Queries */
+
+@media (min-width: 768px) {
+    .card-index-container{
+        display: flex;
+    }
+    .index-option{
+        max-width: 160px;
+    }
+    .juegos{
+        display: flex;
+        justify-content: space-around;
+    }
+}
