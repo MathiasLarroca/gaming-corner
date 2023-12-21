@@ -98,10 +98,12 @@ h2 {
     grid-template-areas: 
     "ps5 ps5-texto"
     "ps5 comprar";
+    max-height: 100vh;
 }
 
 .index-consola-ps5 img{
     grid-area: ps5;
+    max-height: 100%;
 }
 
 .index-consola-ps5 a{
@@ -134,10 +136,12 @@ h2 {
     grid-template-areas: 
     "xbox-texto xbox"
     "comprar xbox";
+    max-height: 100vh;
 }
 
 .index-consola-xbox img{
     grid-area: xbox;
+    max-height: 100%;
 }
 
 .index-consola-xbox a{
