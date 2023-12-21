@@ -87,29 +87,76 @@ h2 {
     align-items: baseline;
 }
 
-/* .ps5-xbox{
+.index-consola-ps5{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr 50px;
+    padding: 1rem;
+    border: 3px outset black;
+    margin: .5rem;
+    background-color: white;
     grid-template-areas: 
     "ps5 ps5-texto"
-    "xbox-texto xbox";
-    padding: .5rem;
-} */
+    "ps5 comprar";
+}
 
-/* .ps5 {
+.index-consola-ps5 img{
     grid-area: ps5;
 }
 
-.xbox {
-    grid-area: xbox;
-} */
+.index-consola-ps5 a{
+    padding: 2px 2.5px;
+    color: white;
+    background-color: crimson;
+    border-radius: 5px;
+    border-style: outset;
+    border-color: black;
+    margin: .5rem;
+    text-align: center;
+    grid-area: comprar;
+}
 
-.index-consola{
+.index-consola-ps5 a:hover{
+    color: crimson;
+    background-color: white;
+    border-color: crimson;
+    border-style: inset;
+}
+
+.index-consola-xbox{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 50px;
     padding: 1rem;
-    border: 50px solid black;
+    border: 3px outset black;
+    margin: .5rem;
+    background-color: white;
+    grid-template-areas: 
+    "xbox-texto xbox"
+    "comprar xbox";
+}
+
+.index-consola-xbox img{
+    grid-area: xbox;
+}
+
+.index-consola-xbox a{
+    padding: 2px 2.5px;
+    color: white;
+    background-color: crimson;
+    border-radius: 5px;
+    border-style: outset;
+    border-color: black;
+    margin: .5rem;
+    text-align: center;
+    grid-area: comprar;
+}
+
+.index-consola-xbox a:hover{
+    color: crimson;
+    background-color: white;
+    border-color: crimson;
+    border-style: inset;
 }
 
 .texto-consola-index{
