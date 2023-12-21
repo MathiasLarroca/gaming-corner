@@ -56,6 +56,11 @@ header {
 
 /* Index */
 
+.carousel-container{
+    display: flex;
+    justify-content: center;
+}
+
 .slide {
     width: 100vw;
     max-width: 800px;
@@ -87,18 +92,25 @@ h2 {
     align-items: baseline;
 }
 
+.ps5-xbox{
+    display: flex;
+    flex-direction: column;
+}
+
 .index-consola-ps5{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 50px;
     padding: 1rem;
     border: 3px outset black;
+    border-radius: 10px;
     margin: .5rem;
     background-color: white;
     grid-template-areas: 
     "ps5 ps5-texto"
     "ps5 comprar";
     max-height: 100vh;
+    max-width: 850px;
 }
 
 .index-consola-ps5 img{
@@ -131,12 +143,15 @@ h2 {
     grid-template-rows: 1fr 50px;
     padding: 1rem;
     border: 3px outset black;
+    border-radius: 10px;
     margin: .5rem;
     background-color: white;
     grid-template-areas: 
     "xbox-texto xbox"
     "comprar xbox";
     max-height: 100vh;
+    max-width: 850px;
+    align-self: end;
 }
 
 .index-consola-xbox img{
