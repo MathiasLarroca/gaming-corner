@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Gaming Corner</title>
+</head>
+
+<body>
+
+    <header>
+
+        <nav class="navbar navbar-expand-lg">
+            <div class="container d-flex p-2 flex-row align-items-baseline">
+                <a class="navbar-brand" href="./index.html"><img src="./img/temporary-logo.png" alt="Logo de Gaming Corner" class="logo">
+                <h1>Gaming Corner</h1></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/componentes-de-pc.html">Componentes de PC</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/accesorios.html">Accesorios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/consolas.html">Consolas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/juegos.html">Juegos</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Crear interaccion de carrito de compras luego -->
+                <i class="bi bi-cart3"></i>
+
+        <form action="">
+
+            <input type="text" placeholder="Busque aqui">
+            <input type="submit" value="Buscar">
+
+        </form>
+            </div>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <div id="carouselExampleIndicators" class="carousel slide d-flex justify-content-center">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./img/banner-index.jpg" class="d-block w-100" alt="Una Nintendo Switch">
+                </div>
+                <div class="carousel-item">
+                    <img src="..." class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="..." class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <h2>Juegos</h2>
+
+        <section class="juegos">
+
+            <article class="index-option">
+
+                <a href="./pages/juegos.html#playstation"><img src="./img/playstation-logo.png" alt="Logo de Playstation">
+                <p>Playstation</p></a>
+
+            </article>
+
+            <article class="index-option">
+
+                <a href="./pages/juegos.html#xbox"><img src="./img/xbox-logo.png" alt="Logo de Xbox">
+                <p>Xbox</p></a>
+
+            </article>
+
+            <article class="index-option">
+
+                <a href="./pages/juegos.html#switch"><img src="./img/nintendo-logo.png" alt="Logo de Nintendo Switch">
+                <p>Nintendo</p></a>
+
+            </article>
+
+            <article class="index-option">
+
+                <a href="./pages/juegos.html#mesa"><img src="./img/mesa-logo.png" alt="Pieza de Ajedrez">
+                <p>Juegos de Mesa</p></a>
+
+            </article>
+
+        </section>
+
+        <section class="ps5-xbox">
+
+            <div>
+            <img src="./img/ps5.jpg" alt="Una PS5 con mando" class="ps5">
+            <p class="texto-consola-index">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui et tempore quaerat vitae rerum. Ea tempore in magni, vero corrupti numquam eum obcaecati, debitis velit doloribus dolorum unde minima quia!</p>
+        </div>
+
+        <div>
+            <p class="texto-consola-index">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto perspiciatis corrupti adipisci eligendi omnis voluptatum minima velit consequatur ipsam id pariatur illum, accusamus atque, expedita nulla quibusdam vero. Mollitia, quia?</p>
+            <img src="./img/xbox.jpg" alt="Una Xbox con mando" class="xbox">
+        </div>
+
+        </section>
+
+        <h2>Lo Más Vendido</h2>
+
+        <section class="card-index-container">
+
+            <article class="card-index">
+
+                <img src="./img/placeholder.jpg" alt="">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis facere molestias tenetur iure neque ratione repudiandae, voluptate voluptatum ipsam quae eius unde et voluptatibus veritatis quo minima est impedit ea?</p>
+                <a href="">Comprar</a>
+
+            </article>
+
+            <article class="card-index">
+
+                <img src="./img/placeholder.jpg" alt="">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis facere molestias tenetur iure neque ratione repudiandae, voluptate voluptatum ipsam quae eius unde et voluptatibus veritatis quo minima est impedit ea?</p>
+                <a href="">Comprar</a>
+
+            </article>
+
+            <article class="card-index">
+
+                <img src="./img/placeholder.jpg" alt="">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis facere molestias tenetur iure neque ratione repudiandae, voluptate voluptatum ipsam quae eius unde et voluptatibus veritatis quo minima est impedit ea?</p>
+                <a href="">Comprar</a>
+
+            </article>
+
+            <article class="card-index">
+
+                <img src="./img/placeholder.jpg" alt="">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis facere molestias tenetur iure neque ratione repudiandae, voluptate voluptatum ipsam quae eius unde et voluptatibus veritatis quo minima est impedit ea?</p>
+                <a href="">Comprar</a>
+
+            </article>
+
+        </section>
+        <div class="filler">.</div>
+
+    </main>
+
+    <footer>
+
+        <section class="redes-mobile">
+
+            <i class="bi bi-instagram"></i>
+            <i class="bi bi-facebook"></i>
+            <i class="bi bi-twitter-x"></i>
+
+        </section>
+
+        <section class="footer">
+
+            <h4>Newsletter</h4>
+
+            <form action="">
+
+                <input type="email" placeholder="Ingrese su email...">
+                <input type="submit" value="Suscribirse">
+
+            </form>
+
+        </section>
+
+        <p>Copyright | 2023</p>
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
