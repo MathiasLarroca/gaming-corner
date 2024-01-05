@@ -54,6 +54,16 @@ header {
     color: white;
 }
 
+.carrito-buscador{
+    gap: 1rem;
+    display: flex;
+    align-items: baseline;
+}
+
+.bi-cart3{
+    font-size: 1.5rem;
+}
+
 /* Index */
 
 .carousel-container{
@@ -244,6 +254,13 @@ footer p {
 
 h4{
     margin: 3rem;
+    font-size: 2rem;
+}
+
+.redes{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
     font-size: 2rem;
 }
 
