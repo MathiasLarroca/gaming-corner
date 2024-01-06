@@ -21,21 +21,22 @@ main {
     background-color: crimson;
 }
 
-.card-index {
+.tarjeta {
     width: 45vw;
     border: 3px black solid;
     background-color: white;
     text-align: center;
     padding: 8px;
     margin: .5rem;
+    border-radius: 10px;
 }
 
-.card-index p {
+.tarjeta p {
     border-top: 3px solid black;
     padding: 8px;
 }
 
-.card-index a {
+.tarjeta a {
     padding: 2px 2.5px;
     color: white;
     background-color: crimson;
@@ -44,16 +45,11 @@ main {
     border-color: black;
 }
 
-.card-index a:hover{
+.tarjeta a:hover{
     color: crimson;
     background-color: white;
     border-color: crimson;
     border-style: inset;
-}
-
-.card-index-container{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
 }
 
 .card-container{
@@ -78,9 +74,6 @@ h3 {
 }
 
 @media (min-width: 768px) {
-    .card-index-container{
-        display: flex;
-    }
     .index-option{
         max-width: 160px;
     }
