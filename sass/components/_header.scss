@@ -1,0 +1,41 @@
+.logo {
+    max-width: 80px;
+}
+
+h1 {
+    color: crimson;
+}
+
+header {
+    background-color: black;
+    color: red;
+    padding: 1rem;
+}
+
+.nav-link{
+    color: crimson;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.nav-link:hover{
+    color: white;
+}
+
+.navbar-toggler{
+    color: white;
+}
+
+.navbar-toggler-icon {
+    color: white;
+}
+
+.carrito-buscador{
+    gap: 1rem;
+    display: flex;
+    align-items: baseline;
+}
+
+.bi-cart3{
+    font-size: 1.5rem;
+}

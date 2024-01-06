@@ -1,335 +1,325 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 img {
-    max-width: 100%;
+  max-width: 100%;
 }
 
-a{
-    text-decoration: none;
-    color: black;
+a {
+  text-decoration: none;
+  color: black;
 }
 
 ul, ol {
-    list-style: none;
+  list-style: none;
 }
 
 main {
-    background-color: crimson;
+  background-color: crimson;
 }
 
-/* Header */
-
-.logo {
-    max-width: 80px;
+.tarjeta {
+  width: 45vw;
+  border: 3px black solid;
+  background-color: white;
+  text-align: center;
+  padding: 8px;
+  margin: 0.5rem;
+  border-radius: 10px;
 }
 
-h1 {
-    color: crimson;
+.tarjeta p {
+  border-top: 3px solid black;
+  padding: 8px;
 }
 
-header {
-    background-color: black;
-    color: red;
-    padding: 1rem;
+.tarjeta a {
+  padding: 2px 2.5px;
+  color: white;
+  background-color: crimson;
+  border-radius: 5px;
+  border-style: outset;
+  border-color: black;
 }
 
-.nav-link{
-    color: crimson;
-    font-size: 1.2rem;
-    text-align: center;
+.tarjeta a:hover {
+  color: crimson;
+  background-color: white;
+  border-color: crimson;
+  border-style: inset;
 }
 
-.nav-link:hover{
-    color: white;
-}
-
-.navbar-toggler{
-    color: white;
-}
-
-.navbar-toggler-icon {
-    color: white;
-}
-
-.carrito-buscador{
-    gap: 1rem;
-    display: flex;
-    align-items: baseline;
-}
-
-.bi-cart3{
-    font-size: 1.5rem;
-}
-
-
-/* Index */
-
-.carousel-container{
-    display: flex;
-    justify-content: center;
-}
-
-.slide {
-    width: 100vw;
-    max-width: 800px;
-    padding: 1rem;
-}
-
-h2 {
-    text-align: center;
-    padding: 1rem;
-    border: 3px black solid;
-    border-radius: 10px;
-    color: crimson;
-    background-color: black;
-    border-style: groove;
-    margin: 1.5rem;
-}
-
-.index-option{
-    width: 25vw;
-    padding: 1rem;
-}
-
-.index-option p {
-    text-align: center;
-}
-
-.juegos{
-    display: flex;
-    align-items: baseline;
-}
-
-.ps5-xbox{
-    display: flex;
-    flex-direction: column;
-}
-
-.index-consola-ps5{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 50px;
-    padding: 1rem;
-    border: 3px outset black;
-    border-radius: 10px;
-    margin: .5rem;
-    background-color: white;
-    grid-template-areas: 
-    "ps5 ps5-texto"
-    "ps5 comprar";
-    max-height: 100vh;
-    max-width: 850px;
-}
-
-.index-consola-ps5 img{
-    grid-area: ps5;
-    max-height: 100%;
-}
-
-.index-consola-ps5 a{
-    padding: 2px 2.5px;
-    color: white;
-    background-color: crimson;
-    border-radius: 5px;
-    border-style: outset;
-    border-color: black;
-    margin: .5rem;
-    text-align: center;
-    grid-area: comprar;
-}
-
-.index-consola-ps5 a:hover{
-    color: crimson;
-    background-color: white;
-    border-color: crimson;
-    border-style: inset;
-}
-
-.index-consola-xbox{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 50px;
-    padding: 1rem;
-    border: 3px outset black;
-    border-radius: 10px;
-    margin: .5rem;
-    background-color: white;
-    grid-template-areas: 
-    "xbox-texto xbox"
-    "comprar xbox";
-    max-height: 100vh;
-    max-width: 850px;
-    align-self: end;
-}
-
-.index-consola-xbox img{
-    grid-area: xbox;
-    max-height: 100%;
-}
-
-.index-consola-xbox a{
-    padding: 2px 2.5px;
-    color: white;
-    background-color: crimson;
-    border-radius: 5px;
-    border-style: outset;
-    border-color: black;
-    margin: .5rem;
-    text-align: center;
-    grid-area: comprar;
-}
-
-.index-consola-xbox a:hover{
-    color: crimson;
-    background-color: white;
-    border-color: crimson;
-    border-style: inset;
-}
-
-.texto-consola-index{
-    padding: 0.5rem;
-    text-align: center;
-}
-
-.card-index {
-    width: 45vw;
-    border: 3px black solid;
-    background-color: white;
-    text-align: center;
-    padding: 8px;
-    margin: .5rem;
-}
-
-.card-index p {
-    border-top: 3px solid black;
-    padding: 8px;
-}
-
-.card-index a {
-    padding: 2px 2.5px;
-    color: white;
-    background-color: crimson;
-    border-radius: 5px;
-    border-style: outset;
-    border-color: black;
-}
-
-.card-index a:hover{
-    color: crimson;
-    background-color: white;
-    border-color: crimson;
-    border-style: inset;
-}
-
-.card-index-container{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
-/* Footer */
-
-footer {
-    background-color: black;
-    color: red;
-    padding: 1rem;
-}
-
-footer input {
-    background-color: red;
-    border: 1px red solid;
-    border-radius: 5px;
-}
-
-.footer{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-footer p {
-    text-align: center;
-}
-
-h4{
-    margin: 3rem;
-    font-size: 2rem;
-}
-
-.redes{
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    font-size: 2rem;
-}
-
-/* Pages */
-
-.card-container{
-    display: flex;
-    overflow: auto;
+.card-container {
+  display: flex;
+  overflow: auto;
 }
 
 h3 {
-    text-align: center;
-    padding: 1rem;
-    border: 3px black solid;
-    border-radius: 10px;
-    color: crimson;
-    background-color: black;
-    border-style: groove;
-    margin: 1.5rem;
+  text-align: center;
+  padding: 1rem;
+  border: 3px black solid;
+  border-radius: 10px;
+  color: crimson;
+  background-color: black;
+  border-style: groove;
+  margin: 1.5rem;
 }
 
-.filler{
-    background-color: crimson;
-    color: crimson;
+.filler {
+  background-color: crimson;
+  color: crimson;
 }
 
-.consola-card{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    border: black outset 3px;
-    margin: 1rem;
-    padding: .5rem;
-    background-color: white;
+@media (min-width: 768px) {
+  .index-option {
+    max-width: 160px;
+  }
+  .juegos {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+.carousel-container {
+  display: flex;
+  justify-content: center;
+}
+
+.slide {
+  width: 100vw;
+  max-width: 800px;
+  padding: 1rem;
+}
+
+footer {
+  background-color: black;
+  color: red;
+  padding: 1rem;
+}
+
+footer input {
+  background-color: red;
+  border: 1px red solid;
+  border-radius: 5px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer p {
+  text-align: center;
+}
+
+h4 {
+  margin: 3rem;
+  font-size: 2rem;
+}
+
+.redes {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  font-size: 2rem;
+}
+
+.logo {
+  max-width: 80px;
+}
+
+h1 {
+  color: crimson;
+}
+
+header {
+  background-color: black;
+  color: red;
+  padding: 1rem;
+}
+
+.nav-link {
+  color: crimson;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.nav-link:hover {
+  color: white;
+}
+
+.navbar-toggler {
+  color: white;
+}
+
+.navbar-toggler-icon {
+  color: white;
+}
+
+.carrito-buscador {
+  gap: 1rem;
+  display: flex;
+  align-items: baseline;
+}
+
+.bi-cart3 {
+  font-size: 1.5rem;
+}
+
+.consola-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border: black outset 3px;
+  margin: 1rem;
+  padding: 0.5rem;
+  background-color: white;
 }
 
 .consola-card p {
-    padding: .25rem;
+  padding: 0.25rem;
 }
 
 .consola-card a {
-    padding: 2px 2.5px;
-    color: white;
-    background-color: crimson;
-    border-radius: 5px;
-    border-style: outset;
-    border-color: black;
-    margin: .5rem;
+  padding: 2px 2.5px;
+  color: white;
+  background-color: crimson;
+  border-radius: 5px;
+  border-style: outset;
+  border-color: black;
+  margin: 0.5rem;
 }
 
 .consola-card a:hover {
-    color: crimson;
-    background-color: white;
-    border-color: crimson;
-    border-style: inset;
+  color: crimson;
+  background-color: white;
+  border-color: crimson;
+  border-style: inset;
 }
 
-/* Media Queries */
+h2 {
+  text-align: center;
+  padding: 1rem;
+  border: 3px black solid;
+  border-radius: 10px;
+  color: crimson;
+  background-color: black;
+  border-style: groove;
+  margin: 1.5rem;
+}
+
+.index-option {
+  width: 25vw;
+  padding: 1rem;
+}
+
+.index-option p {
+  text-align: center;
+}
+
+.juegos {
+  display: flex;
+  align-items: baseline;
+}
+
+.ps5-xbox {
+  display: flex;
+  flex-direction: column;
+}
+
+.index-consola-ps5 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 50px;
+  padding: 1rem;
+  border: 3px outset black;
+  border-radius: 10px;
+  margin: 0.5rem;
+  background-color: white;
+  grid-template-areas: "ps5 ps5-texto" "ps5 comprar";
+  max-height: 100vh;
+  max-width: 850px;
+}
+
+.index-consola-ps5 img {
+  grid-area: ps5;
+  max-height: 100%;
+}
+
+.index-consola-ps5 a {
+  padding: 2px 2.5px;
+  color: white;
+  background-color: crimson;
+  border-radius: 5px;
+  border-style: outset;
+  border-color: black;
+  margin: 0.5rem;
+  text-align: center;
+  grid-area: comprar;
+}
+
+.index-consola-ps5 a:hover {
+  color: crimson;
+  background-color: white;
+  border-color: crimson;
+  border-style: inset;
+}
+
+.index-consola-xbox {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 50px;
+  padding: 1rem;
+  border: 3px outset black;
+  border-radius: 10px;
+  margin: 0.5rem;
+  background-color: white;
+  grid-template-areas: "xbox-texto xbox" "comprar xbox";
+  max-height: 100vh;
+  max-width: 850px;
+  align-self: end;
+}
+
+.index-consola-xbox img {
+  grid-area: xbox;
+  max-height: 100%;
+}
+
+.index-consola-xbox a {
+  padding: 2px 2.5px;
+  color: white;
+  background-color: crimson;
+  border-radius: 5px;
+  border-style: outset;
+  border-color: black;
+  margin: 0.5rem;
+  text-align: center;
+  grid-area: comprar;
+}
+
+.index-consola-xbox a:hover {
+  color: crimson;
+  background-color: white;
+  border-color: crimson;
+  border-style: inset;
+}
+
+.texto-consola-index {
+  padding: 0.5rem;
+  text-align: center;
+}
+
+.card-index-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
 
 @media (min-width: 768px) {
-    .card-index-container{
-        display: flex;
-    }
-    .index-option{
-        max-width: 160px;
-    }
-    .juegos{
-        display: flex;
-        justify-content: space-around;
-    }
+  .card-index-container {
+    display: flex;
+  }
 }
+
+/*# sourceMappingURL=styles.css.map */
