@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+main {
+    background-color: crimson;
+}
+
+.card-index {
+    width: 45vw;
+    border: 3px black solid;
+    background-color: white;
+    text-align: center;
+    padding: 8px;
+    margin: .5rem;
+}
+
+.card-index p {
+    border-top: 3px solid black;
+    padding: 8px;
+}
+
+.card-index a {
+    padding: 2px 2.5px;
+    color: white;
+    background-color: crimson;
+    border-radius: 5px;
+    border-style: outset;
+    border-color: black;
+}
+
+.card-index a:hover{
+    color: crimson;
+    background-color: white;
+    border-color: crimson;
+    border-style: inset;
+}
+
+.card-index-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.card-container{
+    display: flex;
+    overflow: auto;
+}
+
+h3 {
+    text-align: center;
+    padding: 1rem;
+    border: 3px black solid;
+    border-radius: 10px;
+    color: crimson;
+    background-color: black;
+    border-style: groove;
+    margin: 1.5rem;
+}
+
+.filler{
+    background-color: crimson;
+    color: crimson;
+}
+
+@media (min-width: 768px) {
+    .card-index-container{
+        display: flex;
+    }
+    .index-option{
+        max-width: 160px;
+    }
+    .juegos{
+        display: flex;
+        justify-content: space-around;
+    }
+}
