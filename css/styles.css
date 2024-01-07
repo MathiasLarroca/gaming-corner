@@ -21,6 +21,13 @@ main {
   background-color: crimson;
 }
 
+input {
+  background-color: crimson;
+  border: 1px red solid;
+  border-radius: 10px;
+  padding: 3px;
+}
+
 .tarjeta {
   width: 45vw;
   border: 3px black solid;
@@ -99,12 +106,6 @@ footer {
   padding: 1rem;
 }
 
-footer input {
-  background-color: red;
-  border: 1px red solid;
-  border-radius: 5px;
-}
-
 .footer {
   display: flex;
   flex-direction: column;
@@ -167,6 +168,10 @@ header {
 
 .bi-cart3 {
   font-size: 1.5rem;
+}
+
+.boton-buscar {
+  margin-top: 0.5rem;
 }
 
 .consola-card {
