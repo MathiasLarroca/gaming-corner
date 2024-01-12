@@ -1,126 +1,161 @@
 h2 {
     text-align: center;
     padding: 1rem;
-    border: 3px black solid;
+    border: 3px $secondary-color solid;
     border-radius: 10px;
-    color: crimson;
-    background-color: black;
+    color: $primary-color;
+    background-color: $secondary-color;
     border-style: groove;
     margin: 1.5rem;
 }
 
-.index-option{
+.index-option {
     width: 25vw;
     padding: 1rem;
+
+    & p {
+        text-align: center;
+    }
+
+    @include MQ-md{
+        max-width: 160px;
+    }
 }
 
-.index-option p {
-    text-align: center;
-}
-
-.juegos{
+.juegos {
     display: flex;
     align-items: baseline;
 }
 
-.ps5-xbox{
+.ps5-xbox {
     display: flex;
     flex-direction: column;
 }
 
-.index-consola-ps5{
+.index-consola-ps5 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 50px;
     padding: 1rem;
-    border: 3px outset black;
+    border: 3px outset $secondary-color;
     border-radius: 10px;
     margin: .5rem;
-    background-color: white;
-    grid-template-areas: 
-    "ps5 ps5-texto"
-    "ps5 comprar";
+    background-color: $terciary-color;
+    grid-template-areas:
+        "ps5 ps5-texto"
+        "ps5 comprar";
     max-height: 100vh;
     max-width: 850px;
+
+    & img {
+        grid-area: ps5;
+        max-height: 100%;
+    }
+
+    & a {
+        padding: 2px 2.5px;
+        color: $terciary-color;
+        background-color: $primary-color;
+        border-radius: 5px;
+        border-style: outset;
+        border-color: $secondary-color;
+        margin: .5rem;
+        text-align: center;
+        grid-area: comprar;
+
+        &:hover {
+            color: $primary-color;
+            background-color: $terciary-color;
+            border-color: $primary-color;
+            border-style: inset;
+        }
+    }
 }
 
-.index-consola-ps5 img{
-    grid-area: ps5;
-    max-height: 100%;
-}
-
-.index-consola-ps5 a{
-    padding: 2px 2.5px;
-    color: white;
-    background-color: crimson;
-    border-radius: 5px;
-    border-style: outset;
-    border-color: black;
-    margin: .5rem;
-    text-align: center;
-    grid-area: comprar;
-}
-
-.index-consola-ps5 a:hover{
-    color: crimson;
-    background-color: white;
-    border-color: crimson;
-    border-style: inset;
-}
-
-.index-consola-xbox{
+.index-consola-xbox {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 50px;
     padding: 1rem;
-    border: 3px outset black;
+    border: 3px outset $secondary-color;
     border-radius: 10px;
     margin: .5rem;
-    background-color: white;
-    grid-template-areas: 
-    "xbox-texto xbox"
-    "comprar xbox";
+    background-color: $terciary-color;
+    grid-template-areas:
+        "xbox-texto xbox"
+        "comprar xbox";
     max-height: 100vh;
     max-width: 850px;
     align-self: end;
+
+    & img {
+        grid-area: xbox;
+        max-height: 100%;
+    }
+
+    & a {
+        padding: 2px 2.5px;
+        color: $terciary-color;
+        background-color: $primary-color;
+        border-radius: 5px;
+        border-style: outset;
+        border-color: $secondary-color;
+        margin: .5rem;
+        text-align: center;
+        grid-area: comprar;
+
+        &:hover {
+            color: $primary-color;
+            background-color: $terciary-color;
+            border-color: $primary-color;
+            border-style: inset;
+        }
+    }
 }
 
-.index-consola-xbox img{
-    grid-area: xbox;
-    max-height: 100%;
-}
-
-.index-consola-xbox a{
-    padding: 2px 2.5px;
-    color: white;
-    background-color: crimson;
-    border-radius: 5px;
-    border-style: outset;
-    border-color: black;
-    margin: .5rem;
-    text-align: center;
-    grid-area: comprar;
-}
-
-.index-consola-xbox a:hover{
-    color: crimson;
-    background-color: white;
-    border-color: crimson;
-    border-style: inset;
-}
-
-.texto-consola-index{
+.texto-consola-index {
     padding: 0.5rem;
     text-align: center;
 }
 
-.card-index-container{
+.card-index-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
 
 @media (min-width: 768px) {
-    .card-index-container{
+    .card-index-container {
         display: flex;
+    }
+}
+
+.tarjeta-index{
+    width: 45vw;
+    border: 3px $secondary-color solid;
+    background-color: $terciary-color;
+    text-align: center;
+    padding: 8px;
+    margin: .5rem;
+    border-radius: 10px;
+
+    & p {
+        border-top: 3px solid $secondary-color;
+        padding: 8px;
+    }
+
+    & a {
+        padding: 2px 2.5px;
+        color: $terciary-color;
+        background-color: $primary-color;
+        border-radius: 5px;
+        border-style: outset;
+        border-color: $secondary-color;
+
+        &:hover {
+            color: $primary-color;
+            background-color: $terciary-color;
+            border-color: $primary-color;
+            border-style: inset;
+        }
     }
 }

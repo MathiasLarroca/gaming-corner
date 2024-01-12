@@ -13,7 +13,8 @@ a {
   color: black;
 }
 
-ul, ol {
+ul,
+ol {
   list-style: none;
 }
 
@@ -29,7 +30,9 @@ input {
 }
 
 .tarjeta {
-  width: 45vw;
+  display: flex;
+  flex-direction: column;
+  min-width: 60vw;
   border: 3px black solid;
   background-color: white;
   text-align: center;
@@ -37,12 +40,10 @@ input {
   margin: 0.5rem;
   border-radius: 10px;
 }
-
 .tarjeta p {
   border-top: 3px solid black;
   padding: 8px;
 }
-
 .tarjeta a {
   padding: 2px 2.5px;
   color: white;
@@ -50,8 +51,8 @@ input {
   border-radius: 5px;
   border-style: outset;
   border-color: black;
+  justify-self: end;
 }
-
 .tarjeta a:hover {
   color: crimson;
   background-color: white;
@@ -81,9 +82,6 @@ h3 {
 }
 
 @media (min-width: 768px) {
-  .index-option {
-    max-width: 160px;
-  }
   .juegos {
     display: flex;
     justify-content: space-around;
@@ -147,7 +145,6 @@ header {
   font-size: 1.2rem;
   text-align: center;
 }
-
 .nav-link:hover {
   color: white;
 }
@@ -155,7 +152,6 @@ header {
 .navbar-toggler {
   color: white;
 }
-
 .navbar-toggler-icon {
   color: white;
 }
@@ -182,11 +178,9 @@ header {
   padding: 0.5rem;
   background-color: white;
 }
-
 .consola-card p {
   padding: 0.25rem;
 }
-
 .consola-card a {
   padding: 2px 2.5px;
   color: white;
@@ -196,7 +190,6 @@ header {
   border-color: black;
   margin: 0.5rem;
 }
-
 .consola-card a:hover {
   color: crimson;
   background-color: white;
@@ -219,9 +212,13 @@ h2 {
   width: 25vw;
   padding: 1rem;
 }
-
 .index-option p {
   text-align: center;
+}
+@media (min-width: 768px) {
+  .index-option {
+    max-width: 160px;
+  }
 }
 
 .juegos {
@@ -247,12 +244,10 @@ h2 {
   max-height: 100vh;
   max-width: 850px;
 }
-
 .index-consola-ps5 img {
   grid-area: ps5;
   max-height: 100%;
 }
-
 .index-consola-ps5 a {
   padding: 2px 2.5px;
   color: white;
@@ -264,7 +259,6 @@ h2 {
   text-align: center;
   grid-area: comprar;
 }
-
 .index-consola-ps5 a:hover {
   color: crimson;
   background-color: white;
@@ -286,12 +280,10 @@ h2 {
   max-width: 850px;
   align-self: end;
 }
-
 .index-consola-xbox img {
   grid-area: xbox;
   max-height: 100%;
 }
-
 .index-consola-xbox a {
   padding: 2px 2.5px;
   color: white;
@@ -303,7 +295,6 @@ h2 {
   text-align: center;
   grid-area: comprar;
 }
-
 .index-consola-xbox a:hover {
   color: crimson;
   background-color: white;
@@ -325,6 +316,33 @@ h2 {
   .card-index-container {
     display: flex;
   }
+}
+.tarjeta-index {
+  width: 45vw;
+  border: 3px black solid;
+  background-color: white;
+  text-align: center;
+  padding: 8px;
+  margin: 0.5rem;
+  border-radius: 10px;
+}
+.tarjeta-index p {
+  border-top: 3px solid black;
+  padding: 8px;
+}
+.tarjeta-index a {
+  padding: 2px 2.5px;
+  color: white;
+  background-color: crimson;
+  border-radius: 5px;
+  border-style: outset;
+  border-color: black;
+}
+.tarjeta-index a:hover {
+  color: crimson;
+  background-color: white;
+  border-color: crimson;
+  border-style: inset;
 }
 
 /*# sourceMappingURL=styles.css.map */

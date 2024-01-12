@@ -16,18 +16,18 @@ header {
     color: crimson;
     font-size: 1.2rem;
     text-align: center;
-}
 
-.nav-link:hover{
-    color: white;
+    &:hover{
+        color: white;
+    }
 }
 
 .navbar-toggler{
     color: white;
-}
 
-.navbar-toggler-icon {
-    color: white;
+    &-icon{
+        color: white;
+    }
 }
 
 .carrito-buscador{
