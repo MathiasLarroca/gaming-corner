@@ -3,30 +3,30 @@
 }
 
 h1 {
-    color: crimson;
+    color: $primary-color;
 }
 
 header {
-    background-color: black;
-    color: red;
+    background-color: $secondary-color;
+    color: $primary-color;
     padding: 1rem;
 }
 
 .nav-link{
-    color: crimson;
+    color: $primary-color;
     font-size: 1.2rem;
     text-align: center;
 
     &:hover{
-        color: white;
+        color: $terciary-color;
     }
 }
 
 .navbar-toggler{
-    color: white;
+    color: $terciary-color;
 
     &-icon{
-        color: white;
+        color: $terciary-color;
     }
 }
 
@@ -34,6 +34,14 @@ header {
     gap: 1rem;
     display: flex;
     align-items: baseline;
+
+    & a{
+        color: $primary-color;
+
+        &:hover{
+            color: $terciary-color;
+        }
+    }
 }
 
 .bi-cart3{

@@ -8,6 +8,12 @@ $terciary-color: white;
     }
 }
 
+@mixin MQ-index{
+    @media (min-width: 520px){
+        @content
+    }
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -34,7 +40,7 @@ main {
 
 input {
     background-color: $primary-color;
-    border: 1px red solid;
+    border: 1px $primary-color solid;
     border-radius: 10px;
     padding: 3px;
 }
@@ -71,6 +77,10 @@ input {
             border-style: inset;
         }
     }
+
+    @include MQ-md{
+        min-width: 20vw
+    }
 }
 
 .card-container {
@@ -86,17 +96,19 @@ h3 {
     color: $primary-color;
     background-color: $secondary-color;
     border-style: groove;
-    margin: 1.5rem;
+    margin: auto;
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+
+    @include MQ-md{
+        margin: auto;
+        margin-top: 8rem;
+        margin-bottom: 3rem;
+        width: 65vw;
+    }
 }
 
 .filler {
     background-color: $primary-color;
     color: $primary-color;
-}
-
-@media (min-width: 768px) {
-    .juegos {
-        display: flex;
-        justify-content: space-around;
-    }
 }

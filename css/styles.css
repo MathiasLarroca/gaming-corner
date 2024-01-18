@@ -24,7 +24,7 @@ main {
 
 input {
   background-color: crimson;
-  border: 1px red solid;
+  border: 1px crimson solid;
   border-radius: 10px;
   padding: 3px;
 }
@@ -59,6 +59,11 @@ input {
   border-color: crimson;
   border-style: inset;
 }
+@media (min-width: 768px) {
+  .tarjeta {
+    min-width: 20vw;
+  }
+}
 
 .card-container {
   display: flex;
@@ -73,7 +78,17 @@ h3 {
   color: crimson;
   background-color: black;
   border-style: groove;
-  margin: 1.5rem;
+  margin: auto;
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+}
+@media (min-width: 768px) {
+  h3 {
+    margin: auto;
+    margin-top: 8rem;
+    margin-bottom: 3rem;
+    width: 65vw;
+  }
 }
 
 .filler {
@@ -81,12 +96,6 @@ h3 {
   color: crimson;
 }
 
-@media (min-width: 768px) {
-  .juegos {
-    display: flex;
-    justify-content: space-around;
-  }
-}
 .carousel-container {
   display: flex;
   justify-content: center;
@@ -100,7 +109,7 @@ h3 {
 
 footer {
   background-color: black;
-  color: red;
+  color: crimson;
   padding: 1rem;
 }
 
@@ -136,7 +145,7 @@ h1 {
 
 header {
   background-color: black;
-  color: red;
+  color: crimson;
   padding: 1rem;
 }
 
@@ -160,6 +169,12 @@ header {
   gap: 1rem;
   display: flex;
   align-items: baseline;
+}
+.carrito-buscador a {
+  color: crimson;
+}
+.carrito-buscador a:hover {
+  color: white;
 }
 
 .bi-cart3 {
@@ -225,6 +240,11 @@ h2 {
   display: flex;
   align-items: baseline;
 }
+@media (min-width: 768px) {
+  .juegos {
+    justify-content: space-around;
+  }
+}
 
 .ps5-xbox {
   display: flex;
@@ -232,17 +252,23 @@ h2 {
 }
 
 .index-consola-ps5 {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 50px;
+  display: flex;
+  flex-direction: column;
   padding: 1rem;
   border: 3px outset black;
   border-radius: 10px;
   margin: 0.5rem;
   background-color: white;
-  grid-template-areas: "ps5 ps5-texto" "ps5 comprar";
   max-height: 100vh;
   max-width: 850px;
+}
+@media (min-width: 520px) {
+  .index-consola-ps5 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 50px;
+    grid-template-areas: "ps5 ps5-texto" "ps5 comprar";
+  }
 }
 .index-consola-ps5 img {
   grid-area: ps5;
@@ -267,18 +293,24 @@ h2 {
 }
 
 .index-consola-xbox {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 50px;
+  display: flex;
+  flex-direction: column;
   padding: 1rem;
   border: 3px outset black;
   border-radius: 10px;
   margin: 0.5rem;
   background-color: white;
-  grid-template-areas: "xbox-texto xbox" "comprar xbox";
   max-height: 100vh;
   max-width: 850px;
   align-self: end;
+}
+@media (min-width: 520px) {
+  .index-consola-xbox {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 50px;
+    grid-template-areas: "xbox-texto xbox" "comprar xbox";
+  }
 }
 .index-consola-xbox img {
   grid-area: xbox;
