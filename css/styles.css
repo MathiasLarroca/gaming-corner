@@ -61,7 +61,7 @@ input {
 }
 @media (min-width: 768px) {
   .tarjeta {
-    min-width: 20vw;
+    min-width: 15vw;
   }
 }
 
