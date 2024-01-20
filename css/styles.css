@@ -185,6 +185,13 @@ header {
   margin-top: 0.5rem;
 }
 
+@media (min-width: 768px) {
+  .seccion-contacto {
+    display: flex;
+    justify-content: center;
+  }
+}
+
 .tarjeta-contacto-1 {
   margin-top: 2rem;
   margin-left: 2rem;
@@ -194,10 +201,24 @@ header {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
+@media (min-width: 768px) {
+  .tarjeta-contacto-1 {
+    width: 366px;
+    margin-right: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 10px;
+    height: 366px;
+  }
+}
+.tarjeta-contacto-1 .info-logo {
+  margin: auto;
+  width: 175px;
+}
 
 .titulo-contacto {
   width: 90%;
   margin: auto;
+  margin-bottom: 1rem;
 }
 
 .tarjeta-contacto-2 {
@@ -207,12 +228,36 @@ header {
   border-radius: 10px;
   padding: 1rem;
 }
+@media (min-width: 768px) {
+  .tarjeta-contacto-2 {
+    width: 650px;
+    margin-left: 0px;
+  }
+}
 
 .formulario-contacto {
   display: flex;
   flex-direction: column;
   width: 90%;
   margin: auto;
+}
+
+.input-contacto {
+  border-radius: 0px;
+  border: none;
+  border-bottom: crimson solid 2px;
+  background-color: rgb(22, 146, 22);
+  margin: 0.5rem;
+}
+
+.mensaje {
+  border: double 4px crimson;
+  height: 220px;
+}
+
+.enviar-limpiar {
+  margin: 0.5rem;
+  border: ridge;
 }
 
 .consola-card {
