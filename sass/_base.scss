@@ -107,6 +107,7 @@ h2 {
 }
 
 h3 {
+    max-width: 65vw;
     text-align: center;
     padding: 1rem;
     border: 3px $secondary-color solid;
@@ -122,7 +123,6 @@ h3 {
         margin: auto;
         margin-top: 8rem;
         margin-bottom: 3rem;
-        width: 65vw;
     }
 }
 

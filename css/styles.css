@@ -89,6 +89,7 @@ h2 {
 }
 
 h3 {
+  max-width: 65vw;
   text-align: center;
   padding: 1rem;
   border: 3px black solid;
@@ -105,7 +106,6 @@ h3 {
     margin: auto;
     margin-top: 8rem;
     margin-bottom: 3rem;
-    width: 65vw;
   }
 }
 
@@ -448,6 +448,8 @@ header {
   }
 }
 .tarjeta-index {
+  display: flex;
+  flex-direction: column;
   width: 45vw;
   border: 3px black solid;
   background-color: white;
@@ -473,6 +475,12 @@ header {
   background-color: white;
   border-color: rgb(233, 73, 73);
   border-style: inset;
+}
+
+.main-juegos {
+  background-image: url("../../img/juegos-background.jpg");
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 /*# sourceMappingURL=styles.css.map */

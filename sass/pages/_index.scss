@@ -138,6 +138,8 @@
 }
 
 .tarjeta-index {
+    display: flex;
+    flex-direction: column;
     width: 45vw;
     border: 3px $secondary-color solid;
     background-color: $terciary-color;
