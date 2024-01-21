@@ -18,15 +18,33 @@ ol {
   list-style: none;
 }
 
+body {
+  font-family: "Titillium", sans-serif;
+}
+
 main {
-  background-color: crimson;
+  background-color: rgb(233, 73, 73);
 }
 
 input {
-  background-color: crimson;
-  border: 1px crimson solid;
+  background-color: rgb(233, 73, 73);
+  border: 1px rgb(233, 73, 73) solid;
   border-radius: 10px;
   padding: 3px;
+}
+
+h2 {
+  text-align: center;
+  padding: 1rem;
+  border: 3px black solid;
+  border-radius: 10px;
+  color: rgb(233, 73, 73);
+  background-color: black;
+  border-style: groove;
+  margin: 1.5rem;
+  margin-top: 0rem;
+  position: relative;
+  top: 1.5rem;
 }
 
 .tarjeta {
@@ -47,16 +65,16 @@ input {
 .tarjeta a {
   padding: 2px 2.5px;
   color: white;
-  background-color: crimson;
+  background-color: rgb(233, 73, 73);
   border-radius: 5px;
   border-style: outset;
   border-color: black;
   justify-self: end;
 }
 .tarjeta a:hover {
-  color: crimson;
+  color: rgb(233, 73, 73);
   background-color: white;
-  border-color: crimson;
+  border-color: rgb(233, 73, 73);
   border-style: inset;
 }
 @media (min-width: 768px) {
@@ -75,7 +93,7 @@ h3 {
   padding: 1rem;
   border: 3px black solid;
   border-radius: 10px;
-  color: crimson;
+  color: rgb(233, 73, 73);
   background-color: black;
   border-style: groove;
   margin: auto;
@@ -92,8 +110,8 @@ h3 {
 }
 
 .filler {
-  background-color: crimson;
-  color: crimson;
+  background-color: rgb(233, 73, 73);
+  color: rgb(233, 73, 73);
 }
 
 .carousel-container {
@@ -109,7 +127,7 @@ h3 {
 
 footer {
   background-color: black;
-  color: crimson;
+  color: rgb(233, 73, 73);
   padding: 1rem;
 }
 
@@ -121,6 +139,10 @@ footer {
 
 footer p {
   text-align: center;
+}
+
+footer a {
+  color: rgb(233, 73, 73);
 }
 
 h4 {
@@ -140,17 +162,17 @@ h4 {
 }
 
 h1 {
-  color: crimson;
+  color: rgb(233, 73, 73);
 }
 
 header {
   background-color: black;
-  color: crimson;
+  color: rgb(233, 73, 73);
   padding: 1rem;
 }
 
 .nav-link {
-  color: crimson;
+  color: rgb(233, 73, 73);
   font-size: 1.2rem;
   text-align: center;
 }
@@ -171,7 +193,7 @@ header {
   align-items: baseline;
 }
 .carrito-buscador a {
-  color: crimson;
+  color: rgb(233, 73, 73);
 }
 .carrito-buscador a:hover {
   color: white;
@@ -219,10 +241,11 @@ header {
   width: 90%;
   margin: auto;
   margin-bottom: 1rem;
+  top: 0rem;
 }
 
 .tarjeta-contacto-2 {
-  background-color: rgb(22, 146, 22);
+  background-color: rgb(125, 216, 125);
   margin-left: 1.5rem;
   margin-right: 1.5rem;
   border-radius: 10px;
@@ -245,19 +268,25 @@ header {
 .input-contacto {
   border-radius: 0px;
   border: none;
-  border-bottom: crimson solid 2px;
-  background-color: rgb(22, 146, 22);
+  border-bottom: rgb(233, 73, 73) solid 2px;
+  background-color: rgb(125, 216, 125);
   margin: 0.5rem;
 }
 
 .mensaje {
-  border: double 4px crimson;
+  border: double 4px rgb(233, 73, 73);
   height: 220px;
 }
 
 .enviar-limpiar {
   margin: 0.5rem;
   border: ridge;
+}
+
+.main-componentes {
+  background-image: url("../../img/componentes-background.jpg");
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .consola-card {
@@ -274,28 +303,17 @@ header {
 .consola-card a {
   padding: 2px 2.5px;
   color: white;
-  background-color: crimson;
+  background-color: rgb(233, 73, 73);
   border-radius: 5px;
   border-style: outset;
   border-color: black;
   margin: 0.5rem;
 }
 .consola-card a:hover {
-  color: crimson;
+  color: rgb(233, 73, 73);
   background-color: white;
-  border-color: crimson;
+  border-color: rgb(233, 73, 73);
   border-style: inset;
-}
-
-h2 {
-  text-align: center;
-  padding: 1rem;
-  border: 3px black solid;
-  border-radius: 10px;
-  color: crimson;
-  background-color: black;
-  border-style: groove;
-  margin: 1.5rem;
 }
 
 .index-option {
@@ -337,7 +355,7 @@ h2 {
   max-height: 100vh;
   max-width: 850px;
 }
-@media (min-width: 520px) {
+@media (min-width: 470px) {
   .index-consola-ps5 {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -352,7 +370,7 @@ h2 {
 .index-consola-ps5 a {
   padding: 2px 2.5px;
   color: white;
-  background-color: crimson;
+  background-color: rgb(233, 73, 73);
   border-radius: 5px;
   border-style: outset;
   border-color: black;
@@ -361,9 +379,9 @@ h2 {
   grid-area: comprar;
 }
 .index-consola-ps5 a:hover {
-  color: crimson;
+  color: rgb(233, 73, 73);
   background-color: white;
-  border-color: crimson;
+  border-color: rgb(233, 73, 73);
   border-style: inset;
 }
 
@@ -379,7 +397,7 @@ h2 {
   max-width: 850px;
   align-self: end;
 }
-@media (min-width: 520px) {
+@media (min-width: 470px) {
   .index-consola-xbox {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -391,10 +409,15 @@ h2 {
   grid-area: xbox;
   max-height: 100%;
 }
+@media (min-width: 470px) {
+  .index-consola-xbox img {
+    justify-self: end;
+  }
+}
 .index-consola-xbox a {
   padding: 2px 2.5px;
   color: white;
-  background-color: crimson;
+  background-color: rgb(233, 73, 73);
   border-radius: 5px;
   border-style: outset;
   border-color: black;
@@ -403,9 +426,9 @@ h2 {
   grid-area: comprar;
 }
 .index-consola-xbox a:hover {
-  color: crimson;
+  color: rgb(233, 73, 73);
   background-color: white;
-  border-color: crimson;
+  border-color: rgb(233, 73, 73);
   border-style: inset;
 }
 
@@ -440,15 +463,15 @@ h2 {
 .tarjeta-index a {
   padding: 2px 2.5px;
   color: white;
-  background-color: crimson;
+  background-color: rgb(233, 73, 73);
   border-radius: 5px;
   border-style: outset;
   border-color: black;
 }
 .tarjeta-index a:hover {
-  color: crimson;
+  color: rgb(233, 73, 73);
   background-color: white;
-  border-color: crimson;
+  border-color: rgb(233, 73, 73);
   border-style: inset;
 }
 
