@@ -5,9 +5,14 @@
 }
 
 .titulo-juegos {
-    width: 25vw;
+    width: 65vw;
+    border-style: inset;
     border-radius: 50%;
     margin: auto;
+
+    @include MQ-md{
+        width: 25vw;
+    }
 }
 
 .subtitulo-juegos {

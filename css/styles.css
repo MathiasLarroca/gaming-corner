@@ -315,14 +315,22 @@ header {
   .consola-card {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 50px;
-    grid-template-areas: "texto img" "comprar img";
+    grid-template-rows: 100px 1fr 50px;
+    grid-template-areas: "titulo img" "texto img" "comprar img";
     margin: 5rem;
   }
 }
 .consola-card-titulo {
   margin: 1rem;
   display: none;
+  width: 75%;
+  justify-self: center;
+}
+@media (min-width: 768px) {
+  .consola-card-titulo {
+    display: initial;
+    grid-area: titulo;
+  }
 }
 .consola-card img {
   order: 1;
@@ -357,7 +365,7 @@ header {
   border-style: inset;
 }
 .consola-card-left {
-  grid-template-areas: "img texto" "img comprar";
+  grid-template-areas: "img titulo" "img texto" "img comprar";
 }
 
 .xbox-series-s {
@@ -547,9 +555,15 @@ header {
 }
 
 .titulo-juegos {
-  width: 25vw;
+  width: 65vw;
+  border-style: inset;
   border-radius: 50%;
   margin: auto;
+}
+@media (min-width: 768px) {
+  .titulo-juegos {
+    width: 25vw;
+  }
 }
 
 .subtitulo-juegos {
