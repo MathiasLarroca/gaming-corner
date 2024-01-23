@@ -289,18 +289,54 @@ header {
   background-attachment: fixed;
 }
 
+.main-consolas {
+  background-image: url(../../img/consolas-background.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.titulo-consolas {
+  margin-bottom: 9.5rem;
+}
+
 .consola-card {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  flex-direction: column;
   border: black outset 3px;
   margin: 1rem;
   padding: 0.5rem;
   background-color: white;
 }
+@media (min-width: 768px) {
+  .consola-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 50px;
+    grid-template-areas: "texto img" "comprar img";
+    margin: 5rem;
+  }
+}
+.consola-card-titulo {
+  margin: 1rem;
+  display: none;
+}
+.consola-card img {
+  order: 1;
+  grid-area: img;
+}
 .consola-card p {
   padding: 0.25rem;
+  order: 2;
+  align-self: center;
 }
 .consola-card a {
+  width: 75%;
+  justify-self: center;
+  align-self: center;
+  order: 3;
+  grid-area: comprar;
+  display: block;
+  text-align: center;
   padding: 2px 2.5px;
   color: white;
   background-color: rgb(233, 73, 73);
@@ -314,6 +350,16 @@ header {
   background-color: white;
   border-color: rgb(233, 73, 73);
   border-style: inset;
+}
+.consola-card-left {
+  grid-template-areas: "img texto" "img comprar";
+}
+
+.xbox-series-s {
+  margin-bottom: 0rem;
+  margin-top: 2rem;
+  position: relative;
+  bottom: 1rem;
 }
 
 .index-option {
