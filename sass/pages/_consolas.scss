@@ -34,6 +34,7 @@
     & img{
         order: 1;
         grid-area: img;
+        object-fit: cover;
     }
 
     & p {

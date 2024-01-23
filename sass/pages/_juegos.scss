@@ -1,5 +1,26 @@
-.main-juegos{
+.main-juegos {
     background-image: url("../../img/juegos-background.jpg");
     background-size: cover;
     background-attachment: fixed;
+}
+
+.titulo-juegos {
+    width: 25vw;
+    border-radius: 50%;
+    margin: auto;
+}
+
+.subtitulo-juegos {
+    color: $secondary-color;
+    background-color: $primary-color;
+}
+
+.link-juegos{
+    color: $primary-color;
+            background-color: $terciary-color;
+    
+        &:hover{
+            color: $terciary-color;
+        background-color: $primary-color;
+        }
 }

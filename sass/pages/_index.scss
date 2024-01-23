@@ -50,7 +50,11 @@
         max-height: 100%;
     }
 
-    & a {
+    & p{
+        align-self: center;
+    }
+
+    & .link {
         padding: 2px 2.5px;
         color: $terciary-color;
         background-color: $primary-color;
@@ -60,6 +64,9 @@
         margin: .5rem;
         text-align: center;
         grid-area: comprar;
+        justify-self: center;
+        align-self: center;
+        width: 75%;
 
         &:hover {
             color: $primary-color;
@@ -101,7 +108,11 @@
         }
     }
 
-    & a {
+    & p{
+        align-self: center;
+    }
+
+    & .link {
         padding: 2px 2.5px;
         color: $terciary-color;
         background-color: $primary-color;
@@ -111,6 +122,9 @@
         margin: .5rem;
         text-align: center;
         grid-area: comprar;
+        justify-self: center;
+        align-self: center;
+        width: 75%;
 
         &:hover {
             color: $primary-color;

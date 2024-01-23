@@ -58,11 +58,20 @@ h2 {
   margin: 0.5rem;
   border-radius: 10px;
 }
+.tarjeta img {
+  object-fit: cover;
+}
 .tarjeta p {
   border-top: 3px solid black;
   padding: 8px;
 }
-.tarjeta a {
+@media (min-width: 768px) {
+  .tarjeta {
+    min-width: 15vw;
+  }
+}
+
+.link {
   padding: 2px 2.5px;
   color: white;
   background-color: rgb(233, 73, 73);
@@ -71,16 +80,11 @@ h2 {
   border-color: black;
   justify-self: end;
 }
-.tarjeta a:hover {
+.link:hover {
   color: rgb(233, 73, 73);
   background-color: white;
   border-color: rgb(233, 73, 73);
   border-style: inset;
-}
-@media (min-width: 768px) {
-  .tarjeta {
-    min-width: 15vw;
-  }
 }
 
 .card-container {
@@ -323,6 +327,7 @@ header {
 .consola-card img {
   order: 1;
   grid-area: img;
+  object-fit: cover;
 }
 .consola-card p {
   padding: 0.25rem;
@@ -413,7 +418,10 @@ header {
   grid-area: ps5;
   max-height: 100%;
 }
-.index-consola-ps5 a {
+.index-consola-ps5 p {
+  align-self: center;
+}
+.index-consola-ps5 .link {
   padding: 2px 2.5px;
   color: white;
   background-color: rgb(233, 73, 73);
@@ -423,8 +431,11 @@ header {
   margin: 0.5rem;
   text-align: center;
   grid-area: comprar;
+  justify-self: center;
+  align-self: center;
+  width: 75%;
 }
-.index-consola-ps5 a:hover {
+.index-consola-ps5 .link:hover {
   color: rgb(233, 73, 73);
   background-color: white;
   border-color: rgb(233, 73, 73);
@@ -460,7 +471,10 @@ header {
     justify-self: end;
   }
 }
-.index-consola-xbox a {
+.index-consola-xbox p {
+  align-self: center;
+}
+.index-consola-xbox .link {
   padding: 2px 2.5px;
   color: white;
   background-color: rgb(233, 73, 73);
@@ -470,8 +484,11 @@ header {
   margin: 0.5rem;
   text-align: center;
   grid-area: comprar;
+  justify-self: center;
+  align-self: center;
+  width: 75%;
 }
-.index-consola-xbox a:hover {
+.index-consola-xbox .link:hover {
   color: rgb(233, 73, 73);
   background-color: white;
   border-color: rgb(233, 73, 73);
@@ -527,6 +544,26 @@ header {
   background-image: url("../../img/juegos-background.jpg");
   background-size: cover;
   background-attachment: fixed;
+}
+
+.titulo-juegos {
+  width: 25vw;
+  border-radius: 50%;
+  margin: auto;
+}
+
+.subtitulo-juegos {
+  color: black;
+  background-color: rgb(233, 73, 73);
+}
+
+.link-juegos {
+  color: rgb(233, 73, 73);
+  background-color: white;
+}
+.link-juegos:hover {
+  color: white;
+  background-color: rgb(233, 73, 73);
 }
 
 /*# sourceMappingURL=styles.css.map */
