@@ -12,42 +12,42 @@ header {
     padding: 1rem;
 }
 
-.nav-link{
+.nav-link {
     color: $primary-color;
     font-size: 1.2rem;
     text-align: center;
 
-    &:hover{
+    &:hover {
         color: $terciary-color;
     }
 }
 
-.navbar-toggler{
+.navbar-toggler {
     color: $terciary-color;
 
-    &-icon{
+    &-icon {
         color: $terciary-color;
     }
 }
 
-.carrito-buscador{
+.carrito-buscador {
     gap: 1rem;
     display: flex;
     align-items: baseline;
 
-    & a{
+    & a {
         color: $primary-color;
 
-        &:hover{
+        &:hover {
             color: $terciary-color;
         }
     }
 }
 
-.bi-cart3{
+.bi-cart3 {
     font-size: 1.5rem;
 }
 
-.boton-buscar{
+.boton-buscar {
     margin-top: .5rem;
 }

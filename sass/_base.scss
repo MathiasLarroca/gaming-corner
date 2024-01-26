@@ -2,14 +2,14 @@ $primary-color: rgb(233, 73, 73);
 $secondary-color: black;
 $terciary-color: white;
 
-@mixin MQ-md{
-    @media (min-width: 768px){
+@mixin MQ-md {
+    @media (min-width: 768px) {
         @content
     }
 }
 
-@mixin MQ-index{
-    @media (min-width: 470px){
+@mixin MQ-index {
+    @media (min-width: 470px) {
         @content
     }
 }
@@ -68,7 +68,7 @@ h2 {
     grid-template-columns: 1fr 1fr;
     justify-items: center;
 
-    @include MQ-md{
+    @include MQ-md {
         display: flex;
         justify-content: space-evenly;
     }
@@ -85,7 +85,7 @@ h2 {
     margin: .5rem;
     border-radius: 10px;
 
-    & img{
+    & img {
         object-fit: cover;
     }
 
@@ -110,7 +110,7 @@ h2 {
         }
     }
 
-    @include MQ-md{
+    @include MQ-md {
         max-width: 260px;
     }
 }
@@ -145,7 +145,7 @@ h3 {
     margin-top: 5rem;
     margin-bottom: 3rem;
 
-    @include MQ-md{
+    @include MQ-md {
         margin: auto;
         margin-top: 8rem;
         margin-bottom: 3rem;

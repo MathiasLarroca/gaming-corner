@@ -1,11 +1,11 @@
-.seccion-contacto{
-    @include MQ-md{
+.seccion-contacto {
+    @include MQ-md {
         display: flex;
         justify-content: center;
     }
 }
 
-.tarjeta-contacto-1{
+.tarjeta-contacto-1 {
     margin-top: 2rem;
     margin-left: 2rem;
     margin-right: 2rem;
@@ -14,7 +14,7 @@
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 
-    @include MQ-md{
+    @include MQ-md {
         width: 366px;
         margin-right: 0px;
         border-top-right-radius: 0px;
@@ -22,40 +22,40 @@
         height: 366px;
     }
 
-    & .info-logo{
+    & .info-logo {
         margin: auto;
         width: 175px;
     }
 }
 
-.titulo-contacto{
+.titulo-contacto {
     width: 90%;
     margin: auto;
     margin-bottom: 1rem;
     top: 0rem;
 }
 
-.tarjeta-contacto-2{
+.tarjeta-contacto-2 {
     background-color: rgb(125, 216, 125);
     margin-left: 1.5rem;
     margin-right: 1.5rem;
     border-radius: 10px;
     padding: 1rem;
 
-    @include MQ-md{
+    @include MQ-md {
         width: 650px;
         margin-left: 0px;
     }
 }
 
-.formulario-contacto{
+.formulario-contacto {
     display: flex;
     flex-direction: column;
     width: 90%;
     margin: auto;
 }
 
-.input-contacto{
+.input-contacto {
     border-radius: 0px;
     border: none;
     border-bottom: $primary-color solid 2px;
@@ -63,12 +63,12 @@
     margin: .5rem;
 }
 
-.mensaje{
+.mensaje {
     border: double 4px $primary-color;
     height: 220px;
 }
 
-.enviar-limpiar{
+.enviar-limpiar {
     margin: .5rem;
     border: ridge;
 }

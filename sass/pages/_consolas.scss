@@ -1,4 +1,4 @@
-.main-consolas{
+.main-consolas {
     background-image: url(../../img/consolas-background.jpg);
     background-size: cover;
     background-attachment: fixed;
@@ -20,10 +20,10 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 100px 1fr 50px;
-        grid-template-areas: 
-        "titulo img"
-        "texto img"
-        "comprar img";
+        grid-template-areas:
+            "titulo img"
+            "texto img"
+            "comprar img";
         margin: 5rem;
     }
 
@@ -33,13 +33,13 @@
         width: 75%;
         justify-self: center;
 
-        @include MQ-md{
+        @include MQ-md {
             display: initial;
             grid-area: titulo;
         }
     }
 
-    & img{
+    & img {
         order: 1;
         grid-area: img;
         object-fit: cover;
@@ -75,15 +75,15 @@
         }
     }
 
-    &-left{
-        grid-template-areas: 
-        "img titulo"
-        "img texto"
-        "img comprar";
+    &-left {
+        grid-template-areas:
+            "img titulo"
+            "img texto"
+            "img comprar";
     }
 }
 
-.xbox-series-s{
+.xbox-series-s {
     margin-bottom: 0rem;
     margin-top: 2rem;
     position: relative;
