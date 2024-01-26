@@ -94,22 +94,6 @@ h2 {
         padding: 8px;
     }
 
-    & a {
-        padding: 2px 2.5px;
-        color: $terciary-color;
-        background-color: $primary-color;
-        border-radius: 5px;
-        border-style: outset;
-        border-color: $secondary-color;
-
-        &:hover {
-            color: $primary-color;
-            background-color: $terciary-color;
-            border-color: $primary-color;
-            border-style: inset;
-        }
-    }
-
     @include MQ-md {
         max-width: 260px;
     }
@@ -150,9 +134,4 @@ h3 {
         margin-top: 8rem;
         margin-bottom: 3rem;
     }
-}
-
-.filler {
-    background-color: $primary-color;
-    color: $primary-color;
 }
