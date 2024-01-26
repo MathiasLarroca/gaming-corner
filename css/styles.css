@@ -47,10 +47,22 @@ h2 {
   top: 1.5rem;
 }
 
+.card-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+}
+@media (min-width: 768px) {
+  .card-container {
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
+
 .tarjeta {
   display: flex;
   flex-direction: column;
-  min-width: 60vw;
+  width: 45vw;
   border: 3px black solid;
   background-color: white;
   text-align: center;
@@ -65,9 +77,23 @@ h2 {
   border-top: 3px solid black;
   padding: 8px;
 }
+.tarjeta a {
+  padding: 2px 2.5px;
+  color: white;
+  background-color: rgb(233, 73, 73);
+  border-radius: 5px;
+  border-style: outset;
+  border-color: black;
+}
+.tarjeta a:hover {
+  color: rgb(233, 73, 73);
+  background-color: white;
+  border-color: rgb(233, 73, 73);
+  border-style: inset;
+}
 @media (min-width: 768px) {
   .tarjeta {
-    min-width: 15vw;
+    max-width: 260px;
   }
 }
 
@@ -85,11 +111,6 @@ h2 {
   background-color: white;
   border-color: rgb(233, 73, 73);
   border-style: inset;
-}
-
-.card-container {
-  display: flex;
-  overflow: auto;
 }
 
 h3 {
@@ -506,46 +527,6 @@ header {
 .texto-consola-index {
   padding: 0.5rem;
   text-align: center;
-}
-
-.card-index-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-
-@media (min-width: 768px) {
-  .card-index-container {
-    display: flex;
-  }
-}
-.tarjeta-index {
-  display: flex;
-  flex-direction: column;
-  width: 45vw;
-  border: 3px black solid;
-  background-color: white;
-  text-align: center;
-  padding: 8px;
-  margin: 0.5rem;
-  border-radius: 10px;
-}
-.tarjeta-index p {
-  border-top: 3px solid black;
-  padding: 8px;
-}
-.tarjeta-index a {
-  padding: 2px 2.5px;
-  color: white;
-  background-color: rgb(233, 73, 73);
-  border-radius: 5px;
-  border-style: outset;
-  border-color: black;
-}
-.tarjeta-index a:hover {
-  color: rgb(233, 73, 73);
-  background-color: white;
-  border-color: rgb(233, 73, 73);
-  border-style: inset;
 }
 
 .main-juegos {
