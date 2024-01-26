@@ -69,6 +69,7 @@ h2 {
   padding: 8px;
   margin: 0.5rem;
   border-radius: 10px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
 }
 .tarjeta img {
   object-fit: cover;
@@ -131,6 +132,15 @@ h3 {
   padding: 1rem;
 }
 
+.carousel-inner {
+  border: 5px outset black;
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.4);
+}
+
+.carousel-item {
+  object-fit: cover;
+}
+
 footer {
   background-color: black;
   color: rgb(233, 73, 73);
@@ -149,6 +159,9 @@ footer p {
 
 footer a {
   color: rgb(233, 73, 73);
+}
+footer a:hover {
+  color: white;
 }
 
 h4 {
@@ -221,7 +234,9 @@ header {
 }
 
 .tarjeta-contacto-1 {
-  margin-top: 3.5rem;
+  position: relative;
+  top: 1.5rem;
+  margin-bottom: 2.5rem;
   margin-left: 2rem;
   margin-right: 2rem;
   background-color: white;
@@ -232,6 +247,8 @@ header {
 @media (min-width: 768px) {
   .tarjeta-contacto-1 {
     width: 366px;
+    top: 0rem;
+    margin-top: 3.5rem;
     margin-right: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 10px;
@@ -251,15 +268,23 @@ header {
 }
 
 .tarjeta-contacto-2 {
-  background-color: rgb(81, 168, 81);
-  margin: 1.5rem;
+  background-color: rgb(233, 233, 194);
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  margin-top: 1.5rem;
   border-radius: 10px;
   padding: 1rem;
+  position: relative;
+  bottom: 1.5rem;
+  box-shadow: -10px -10px 5px rgba(0, 0, 0, 0.4);
 }
 @media (min-width: 768px) {
   .tarjeta-contacto-2 {
     width: 650px;
+    margin: 1.5rem;
     margin-left: 0px;
+    bottom: 0rem;
+    box-shadow: -10px 10px 5px rgba(0, 0, 0, 0.4);
   }
 }
 
@@ -274,7 +299,7 @@ header {
   border-radius: 0px;
   border: none;
   border-bottom: rgb(233, 73, 73) solid 2px;
-  background-color: rgb(81, 168, 81);
+  background-color: rgb(233, 233, 194);
   margin: 0.5rem;
 }
 

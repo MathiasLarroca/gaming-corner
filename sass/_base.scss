@@ -1,6 +1,7 @@
 $primary-color: rgb(233, 73, 73);
 $secondary-color: black;
 $terciary-color: white;
+$shadow-color: rgb(0, 0, 0, 0.4);
 
 @mixin MQ-md {
     @media (min-width: 768px) {
@@ -84,6 +85,7 @@ h2 {
     padding: 8px;
     margin: .5rem;
     border-radius: 10px;
+    box-shadow: 5px 5px 5px $shadow-color;
 
     & img {
         object-fit: cover;

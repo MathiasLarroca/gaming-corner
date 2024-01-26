@@ -16,6 +16,10 @@ footer p {
 
 footer a {
     color: $primary-color;
+
+    &:hover {
+        color: $terciary-color;
+    }
 }
 
 h4 {

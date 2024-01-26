@@ -6,7 +6,9 @@
 }
 
 .tarjeta-contacto-1 {
-    margin-top: 3.5rem;
+    position: relative;
+    top: 1.5rem;
+    margin-bottom: 2.5rem;
     margin-left: 2rem;
     margin-right: 2rem;
     background-color: $terciary-color;
@@ -16,6 +18,8 @@
 
     @include MQ-md {
         width: 366px;
+        top: 0rem;
+        margin-top: 3.5rem;
         margin-right: 0px;
         border-top-right-radius: 0px;
         border-bottom-left-radius: 10px;
@@ -36,14 +40,22 @@
 }
 
 .tarjeta-contacto-2 {
-    background-color: rgb(81, 168, 81);
-    margin: 1.5rem;
+    background-color: rgb(233, 233, 194);
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    margin-top: 1.5rem;
     border-radius: 10px;
     padding: 1rem;
+    position: relative;
+    bottom: 1.5rem;
+    box-shadow: -10px -10px 5px $shadow-color;
 
     @include MQ-md {
         width: 650px;
+        margin: 1.5rem;
         margin-left: 0px;
+        bottom: 0rem;
+        box-shadow: -10px 10px 5px $shadow-color;
     }
 }
 
@@ -58,7 +70,7 @@
     border-radius: 0px;
     border: none;
     border-bottom: $primary-color solid 2px;
-    background-color: rgb(81, 168, 81);
+    background-color: rgb(233, 233, 194);
     margin: .5rem;
 }
 

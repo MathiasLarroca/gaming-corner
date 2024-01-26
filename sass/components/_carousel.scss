@@ -8,3 +8,12 @@
     max-width: 800px;
     padding: 1rem;
 }
+
+.carousel-inner {
+    border: 5px outset $secondary-color;
+    box-shadow: 10px 10px 5px $shadow-color;
+}
+
+.carousel-item {
+    object-fit: cover;
+}
