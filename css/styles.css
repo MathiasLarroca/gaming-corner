@@ -452,6 +452,7 @@ header {
 .index-consola-ps5 img {
   grid-area: ps5;
   max-height: 100%;
+  object-fit: cover;
 }
 .index-consola-ps5 p {
   align-self: center;
@@ -500,6 +501,7 @@ header {
 .index-consola-xbox img {
   grid-area: xbox;
   max-height: 100%;
+  object-fit: cover;
 }
 @media (min-width: 470px) {
   .index-consola-xbox img {
